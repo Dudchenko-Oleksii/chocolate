@@ -4,53 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CHOCOLATE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <nav>
-        <a href=""
-          >SIMPLY CHOCOLATE<img src="./imeges/chocolate.svg" alt="logo"
+    <header class="header">
+      <nav class="header-navigate">
+        <a href="" class="header-logo"
+          ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE<img
+            class="header-logo-image"
+            src="./imeges/chocolate.svg"
+            alt="logo"
         /></a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">How it<span>&#39;</span>s made?</a></li>
-          <li><a href="">Chocolate is loved</a></li>
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">Home</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href=""
+              >How it<span>&#39;</span>s made?</a
+            >
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="">Chocolate is loved</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="" target="_blank" rel="noopener noreferrer">insta</a></li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">fb</a></li>
-        <li><a href="" target="_blank" rel="noopener noreferrer"></a>twit</li>
+      <ul class="header-social-list">
+        <li class="header-social-item">
+          <a
+            class="header-social-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >insta</a
+          >
+        </li>
+        <li class="header-social-item">
+          <a
+            class="header-social-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            >fb</a
+          >
+        </li>
+        <li class="header-social-item">
+          <a
+            class="header-social-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a
+          >twit
+        </li>
       </ul>
     </header>
 
     <!-- main -->
     <main>
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="">How it<span>&#39;</span>s made</a>
-        <a href="">scroll down</a>
+        <button class="hero-btn" type="button">Buy now</button>
+        <a class="hero-made-link" href="">How it<span>&#39;</span>s made</a>
+        <a class="hero-scroll-link" href="">scroll down</a>
       </section>
-      <section>
-        <h2 hidden>Benefits</h2>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+
+      <section class="benefits">
+        <h2 class="visually-hidden">Benefits</h2>
+        <ul class="benefits-list">
+          <li class="benefits-list-item">
+            <h3 class="benefits-item-subtitle">Unsurpassed taste</h3>
+            <p class="benefits-item-text">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
+          <li class="benefits-list-item">
+            <h3 class="benefits-item-subtitle">Affordable price</h3>
+            <p class="benefits-item-text">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -58,9 +108,9 @@
               affordable luxury today.
             </p>
           </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
+          <li class="benefits-list-item">
+            <h3 class="benefits-item-subtitle">Own production</h3>
+            <p class="benefits-item-text">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
@@ -69,290 +119,326 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
-        <p>
+
+      <section class="taste">
+        <h2 class="taste-title">
+          IT ALL ADDS UP TO ONE EXCEPTIONAL
+          <span class="color-title">TASTE</span> SENSATION
+        </h2>
+        <p class="taste-text">
           At Simply Chocolate, we believe that the secret to exceptional
           chocolate is in the details. From the sourcing of the finest
           ingredients to the careful crafting of each individual piece, every
           step of our process adds up to one exceptional taste sensation.
         </p>
-        <ul>
-          <li>
+        <ul class="taste-list">
+          <li class="taste-list-card">
             <img
+              class="card-images"
               src="./imeges/img-1-min.png"
               alt="MILK CHOCOLATE"
               width="214"
               height="160"
             />
-            <h3>MILK CHOCOLATE</h3>
+            <h3 class="card-subtitle">MILK CHOCOLATE</h3>
           </li>
-          <li>
+          <li class="taste-list-card">
             <img
+              class="card-images"
               src="./imeges/img-2-min.png"
               alt="MILK"
               width="214"
               height="160"
             />
-            <h3>MILK</h3>
+            <h3 class="card-subtitle">MILK</h3>
           </li>
-          <li>
+          <li class="taste-list-card">
             <img
+              class="card-images"
               src="./imeges/img-3-min.png"
               alt="NUTS"
               width="214"
               height="160"
             />
-            <h3>NUTS</h3>
+            <h3 class="card-subtitle">NUTS</h3>
           </li>
-          <li>
+          <li class="taste-list-card">
             <img
+              class="card-images"
               src="./imeges/img-4-min.png"
               alt="SEMI - SWEET CHOCOLATE"
               width="214"
               height="160"
             />
-            <h3>SEMI - SWEET CHOCOLATE</h3>
+            <h3 class="card-subtitle">SEMI - SWEET CHOCOLATE</h3>
           </li>
-          <li>
+          <li class="taste-list-card">
             <img
+              class="card-images"
               src="./imeges/img-5-min.png"
               alt="CACAO"
               width="214"
               height="160"
             />
-            <h3>CACAO</h3>
+            <h3 class="card-subtitle">CACAO</h3>
           </li>
-          <li>
+          <li class="taste-list-card">
             <img
+              class="card-images"
               src="./imeges/img-6-min.png"
               alt="RASPBERRY"
               width="214"
               height="160"
             />
-            <h3>RASPBERRY</h3>
+            <h3 class="card-subtitle">RASPBERRY</h3>
           </li>
-          <li>
+          <li class="taste-list-card">
             <img
+              class="card-images"
               src="./imeges/img-7-min.png"
               alt="COCONUT OIL"
               width="214"
               height="160"
             />
-            <h3>COCONUT OIL</h3>
+            <h3 class="card-subtitle">COCONUT OIL</h3>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>hOW IT<span>&#39;</span>S made?</h2>
+
+      <section class="made">
+        <h2 class="made-title">hOW IT<span>&#39;</span>S made?</h2>
         <img
+          class="made-image"
           src="./imeges/image-8-min.jpg"
           alt="Do chocolate"
           width="600"
           height="400"
         />
-        <h3>
+        <h3 class="made-subtitle">
           Try our chocolates today and discover the perfect balance of flavor
         </h3>
-        <ul>
-          <li>
-            <p>
+        <ul class="made-list">
+          <li class="made-list-item">
+            <p class="made-item-text">
               Heat the milk in a saucepan without bringing it to a boil. Add
               sugar and cocoa powder.
             </p>
           </li>
-          <li>
-            <p>
+          <li class="made-list-item">
+            <p class="made-item-text">
               At the same time, prepare a water bath. Melt the butter on it.
             </p>
           </li>
-          <li>
-            <p>
+          <li class="made-list-item">
+            <p class="made-item-text">
               "Mix" the milk mixture and already liquid butter. Mix thoroughly
               with a silicone spatula so that the mass becomes uniform and
               silky.
             </p>
           </li>
-          <li>
-            <p>Heat the mixture over low heat, letting it barely boil.</p>
+          <li class="made-list-item">
+            <p class="made-item-text">
+              Heat the mixture over low heat, letting it barely boil.
+            </p>
           </li>
-          <li>
-            <p>
+          <li class="made-list-item">
+            <p class="made-item-text">
               Pour the chocolate into special containers (can be replaced with
               ice molds). Allow to cool and harden.
             </p>
           </li>
         </ul>
       </section>
-      <section>
-        <h2></h2>
-        <ul>
-          <li>
+
+      <section class="products">
+        <h2 class="products-title">
+          Our <span class="color-title"> pRODUCTS</span>
+        </h2>
+        <ul class="products-list">
+          <li class="products-list-card">
             <img
+              class="products-card-image"
               src="./imeges/img-1.jpg"
               alt="orange"
               width="230"
               height="201"
             />
-            <h3>orange</h3>
-            <p>Dark chocolate</p>
-            <button type="button">45 UAH</button>
+            <h3 class="products-card-title">orange</h3>
+            <p class="products-card-text">Dark chocolate</p>
+            <button class="products-btn" type="button">45 UAH</button>
           </li>
-          <li>
+          <li class="products-list-card">
             <img
+              class="products-card-image"
               src="./imeges/img-2.jpg"
               alt="APPLE&CRANBERRY"
               width="230"
               height="201"
             />
-            <h3>APPLE&CRANBERRY</h3>
-            <p>Milk chocolate</p>
-            <button type="button">50 UAH</button>
+            <h3 class="products-card-title">APPLE&CRANBERRY</h3>
+            <p class="products-card-text">Milk chocolate</p>
+            <button class="products-btn" type="button">50 UAH</button>
           </li>
-          <li>
+          <li class="products-list-card">
             <img
+              class="products-card-image"
               src="./imeges/img-3.jpg"
               alt="lime&sea salt"
               width="230"
               height="201"
             />
-            <h3>lime&sea salt</h3>
-            <p>Dark chocolate</p>
-            <button type="button">66 UAH</button>
+            <h3 class="products-card-title">lime&sea salt</h3>
+            <p class="products-card-text">Dark chocolate</p>
+            <button class="products-btn" type="button">66 UAH</button>
           </li>
-          <li>
+          <li class="products-list-card">
             <img
+              class="products-card-image"
               src="./imeges/img-4.jpg"
               alt="pineapple"
               width="230"
               height="201"
             />
-            <h3>pineapple</h3>
-            <p>Dark chocolate</p>
-            <button type="button">54 UAH</button>
+            <h3 class="products-card-title">pineapple</h3>
+            <p class="products-card-text">Dark chocolate</p>
+            <button class="products-btn" type="button">54 UAH</button>
           </li>
-          <li>
+          <li class="products-list-card">
             <img
+              class="products-card-image"
               src="./imeges/img-5.jpg"
               alt="Classic"
               width="230"
               height="201"
             />
-            <h3>Classic</h3>
-            <p>Milk chocolate</p>
-            <button type="button">45 UAH</button>
+            <h3 class="products-card-title">Classic</h3>
+            <p class="products-card-text">Milk chocolate</p>
+            <button class="products-btn" type="button">45 UAH</button>
           </li>
-          <li>
+          <li class="products-list-card">
             <img
+              class="products-card-image"
               src="./imeges/img-6.jpg"
               alt="honey"
               width="230"
               height="201"
             />
-            <h3>honey</h3>
-            <p>Milk chocolate</p>
-            <button type="button">50 UAH</button>
+            <h3 class="products-card-title">honey</h3>
+            <p class="products-card-text">Milk chocolate</p>
+            <button class="products-btn" type="button">50 UAH</button>
           </li>
-          <li>
+          <li class="products-list-card">
             <img
+              class="products-card-image"
               src="./imeges/img-7.jpg"
               alt="Roasted fruits"
               width="230"
               height="201"
             />
-            <h3>Roasted fruits</h3>
-            <p>Dark chocolate</p>
-            <button type="button">66 UAH</button>
+            <h3 class="products-card-title">Roasted fruits</h3>
+            <p class="products-card-text">Dark chocolate</p>
+            <button class="products-btn" type="button">66 UAH</button>
           </li>
-          <li>
+          <li class="products-list-card">
             <img
+              class="products-card-image"
               src="./imeges/img-8.jpg"
               alt="Classic"
               width="230"
               height="201"
             />
-            <h3>Classic</h3>
-            <p>White chocolate</p>
-            <button type="button">54 UAH</button>
+            <h3 class="products-card-title">Classic</h3>
+            <p class="products-card-text">White chocolate</p>
+            <button class="products-btn" type="button">54 UAH</button>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>tOp Sellers</h2>
-        <ul>
-          <li>
+
+      <section class="top">
+        <h2 class="top-title"><span class="color-title">tOp</span> Sellers</h2>
+        <ul class="top-list">
+          <li class="top-list-card">
             <img
+              class="top-card-image"
               src="./imeges/img-1-seler.jpg"
               alt="CHOCOLATE WITH NUTS"
               width="368"
               height="464"
             />
-            <h3>CHOCOLATE WITH NUTS</h3>
+            <h3 class="top-card-subtitle">CHOCOLATE WITH NUTS</h3>
           </li>
-          <li>
+          <li class="top-list-card">
             <img
+              class="top-card-image"
               src="./imeges/img-2-seler.jpg"
               alt="CHOCOLATE WITH FRUITS"
               width="368"
               height="464"
             />
-            <h3>CHOCOLATE WITH FRUITS</h3>
+            <h3 class="top-card-subtitle">CHOCOLATE WITH FRUITS</h3>
           </li>
-          <li>
+          <li class="top-list-card">
             <img
+              class="top-card-image"
               src="./imeges/img-3-seler.jpg"
               alt="DARK CHOCOLATE"
               width="368"
               height="464"
             />
-            <h3>DARK CHOCOLATE</h3>
+            <h3 class="top-card-subtitle">DARK CHOCOLATE</h3>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>chocolate is loved</h2>
-        <ul>
-          <li>
+
+      <section class="review">
+        <h2 class="review-title">
+          <span class="color-title">chocolate</span> is loved
+        </h2>
+        <ul class="review-list">
+          <li class="review-list-card">
             <img
+              class="review-card-image"
               src="./imeges/Ellipse-min.png"
               alt="Victoria Dobrzhanska"
               width="80"
               height="80"
             />
-            <h3>Victoria Dobrzhanska</h3>
-            <p>
+            <h3 class="review-card-title">Victoria Dobrzhanska</h3>
+            <p class="review-card-text">
               I love this chocolate bar. Perfect combination of light crispy
               wafer, covered in a thin layer chocolate.
             </p>
           </li>
-          <li>
+          <li class="review-list-card">
             <img
+              class="review-card-image"
               src="./imeges/Ellipse-1-min.png"
               alt="Nazar Babenko"
               width="80"
             />
-            <h3>Nazar Babenko</h3>
-            <p>
+            <h3 class="review-card-title">Nazar Babenko</h3>
+            <p class="review-card-text">
               This chocolate confection is a delight! A delight! The wafer is
               light and crisp, the hazelnut cream is smooth, and the chocolate
               is good.
             </p>
           </li>
-          <li>
+          <li class="review-list-card">
             <img
+              class="review-card-image"
               src="./imeges/Ellipse-2-min.png"
               alt="Olena Kampusch"
               width="80"
             />
-            <h3>Olena Kampusch</h3>
-            <p>
+            <h3 class="review-card-title">Olena Kampusch</h3>
+            <p class="review-card-text">
               Chocolate is a family favourite treat. Love the delicious smooth
               chocolate and the creaminess inside. The wafer is soft but
               crunchy.
             </p>
           </li>
         </ul>
-        <button type="button">Leave a review</button>
+        <button class="review-btn" type="button">Leave a review</button>
       </section>
     </main>
     <!-- footer -->
